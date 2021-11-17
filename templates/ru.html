@@ -1,0 +1,332 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabarruk</title>
+    <link rel="stylesheet" href= "https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href={% static "css/style.css" %}>
+    <link rel="stylesheet" href={% static "css/media.css"%}>
+</head>
+{% block content %}
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav__cards">
+                <img src={% static "img/Asset 1 1.png" %}  alt="" class="nav__card-img">
+                <div class="nav__plat">
+                    <div class="nav__card">
+                        <ul class="nav__card-list">
+                            <li class="nav__card-item">
+                                <a href="#header" class="nav__card-link">Базовый</a>
+                            </li>
+                            <li class="nav__card-item">
+                                <a href="#honey" class="nav__card-link">Товары </a>
+                            </li>
+                            <li class="nav__card-item">
+                                <a href="#product" class="nav__card-link">O нас </a>
+                            </li>
+                            <li class="nav__card-item">
+                                <a href="#map" class="nav__card-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav__lan">
+                        <li class="nav__lan-item">
+                            <a href="{% url "index" %}" class="nav__lan-link">UZ</a>
+                            <p class="nav__lan-txt">/</p>
+                            <a href="#!"  class="nav__lan-link">RU</a>
+                        </li>
+                    </div>
+                    <div class="header__menu">
+                        <span class="header__menu-line"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="header" id="header">
+        <div class="container ">
+            <div class="header__top">
+                <img src={% static "img/Asset 4 2.png"%}  alt="" class="header__top-img">
+            </div>
+            <div class="header__cards">
+                <div class="header__card">
+                    <h1 class="header__card-title"> Продукты</h1>
+                    <div class="header__card-txts">
+                        <p class="header__card-txt">Ложка меда</p>
+                        <p class="header__card-txt">Фасованный хлеб</p>
+                        <p class="header__card-txt"> Белый сахар </p>
+                        <p class="header__card-txt"> Фруктовый сахарный сироп</p>
+                    </div>
+                    <div class="header__remem">
+                        <p class="header__remem-txt">Гарантия от производства до доставки</p>
+                        <p class="header__remem-txt2">Полезный товар </p>
+                    </div>
+                </div>
+                <div class="header__images">
+                    <img  src={% static "img/ba 1.png"%}  alt="" class="header__images-img">
+                    <img src={% static "img/Rectangle 8.png"%}  class="header__images-img2" alt="">
+                    <p class="header__images-txt">products</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="slide">
+            <div class="container">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img class="swiper-slide-img" src={% static "img/Rectangle 7.png"%}  alt=""></div>
+                        <div class="swiper-slide"><img class="swiper-slide-img" src={% static "img/Rectangle 8 (1).png"%} alt="">
+                        </div>
+                        <div class="swiper-slide"><img class="swiper-slide-img" src={% static "img/IMG_4154 2.png"%} alt=""></div>
+                        <div class="swiper-slide"><img class="swiper-slide-img" src={% static "img/novot 2.png"%} alt=""></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+            </div>
+        </section>
+        <section class="honey sec1" id="honey">
+            <div class="container">
+                <div class="honey__cards">
+                    <div class="honey__image">
+                        <img src={% static "img/Group 25.png"%}  alt="" class="honey__image-img">
+                    </div>
+                    <div class="honey__card">
+                        <h3 class="honey__card-title">Ложка меда</h3>
+                        <div class="honey__card-plat">
+                            <span class="honey__card-img"><img src={% static "img/Ellipse 30.png"%}  alt=""></span>
+                            <p class="honey__card-txt">Натуральный мед:</p>
+                        </div>
+                        <div class="honey__card-plat">
+                            <span class="honey__card-img"><img src={% static "img/Ellipse 30.png"%} alt=""></span>
+                            <p class="honey__card-txt">Количество:</p>
+                        </div>
+                        <div class="honey__card-plat">
+                            <span class="honey__card-img"><img src={% static "img/Ellipse 30.png"%} alt=""></span>
+                            <p class="honey__card-txt">Энергия: </p>
+                        </div>
+                        <div class="honey__card-plat">
+                            <span class="honey__card-img"><img src={% static "img/Ellipse 30.png"%} alt=""></span>
+                            <p class="honey__card-txt">Белки: </p>
+                        </div>
+                        <div class="honey__card-plat">
+                            <span class="honey__card-img"><img src={% static "img/Ellipse 30.png"%} alt=""></span>
+                            <p class="honey__card-txt">Масла:</p>
+                        </div>
+
+                        <div class="wrapper">
+                            <div class="link_wrapper wr1">
+                              <a class="link_wrapper-a" href="#!">Заказать</a>
+                              <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+                                  <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+
+
+                    </div>
+                </div>
+                <div class="honey__bottom">
+                    <p class="honey__bottom-title">Из их животов выходит красочный напиток (медовый сок), который является источником исцеления для человека. В самом деле, это знак для мыслящих людей. (Сурат ан-Нахль, 69)
+                    </p>
+                </div>
+            </div>
+            <div class="honey__line">
+                <img src={% static "img/Rectangle 52.png"%} alt="" class="honey__line-img">
+            </div>
+        </section>
+        <section class="honey ">
+            <div class="container">
+                <div class="honey__cards sec2">
+                    <div class="honey__card">
+                        <h3 class="honey__card-title">Фруктовый сахарный сироп</h3>
+                        <div class="honey__card-plat">
+                            <span class="honey__card-img"><img src={% static "img/Ellipse 30.png"%}  alt=""></span>
+                            <p class="honey__card-txt">Натуральный мед:  </p>
+                        </div>
+                        <div class="honey__card-plat">
+                            <span class="honey__card-img"><img src={% static "img/Ellipse 30.png"%}  alt=""></span>
+                            <p class="honey__card-txt">Количество: </p>
+                        </div>
+                        <div class="honey__card-plat">
+                            <span class="honey__card-img"><img src={% static "img/Ellipse 30.png"%} alt=""></span>
+                            <p class="honey__card-txt">Энергия: </p>
+                        </div>
+                        <div class="honey__card-plat">
+                            <span class="honey__card-img"><img src={% static "img/Ellipse 30.png"%} alt=""></span>
+                            <p class="honey__card-txt">Белки: </p>
+                        </div>
+                        <div class="honey__card-plat">
+                            <span class="honey__card-img"><img src={% static "img/Ellipse 30.png"%} alt=""></span>
+                            <p class="honey__card-txt">Масла: </p>
+                        </div>
+                        <div class="wrapper">
+                            <div class="link_wrapper wr2">
+                              <a class="link_wrapper-a" href="#">Заказать</a>
+                              <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+                                  <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="honey__image">
+                        <img src={% static "img/Group 26.png"%} alt="" class="honey__image-img">
+                    </div>
+                </div>
+                <div class="honey__bottom">
+                    <p class="honey__bottom-title">Продукты из натурального фруктового сахарного сиропа чудесно влияют на иммунитет человека. Купите ложки меда, богатые чистыми, натуральными витаминами и минералами, ферментами.
+                    </p>
+                </div>
+            </div>
+            <div class="honey__line">
+                <img src={% static "img/Rectangle 52.png"%} alt="" class="honey__line-img">
+            </div>
+        </section>
+        <section class="honey sec3">
+            <div class="container">
+                <div class="honey__cards">
+                    <div class="honey__image">
+                        <img src={% static "img/Group 27.png"%} alt="" class="honey__image-img">
+                    </div>
+                    <div class="honey__card">
+                        <h3 class="honey__card-title">Ложка меда</h3>
+                        <div class="honey__card-plat">
+                            <span class="honey__card-img"><img src={% static "img/Ellipse 30.png"%} alt=""></span>
+                            <p class="honey__card-txt">Натуральный мед: </p>
+                        </div>
+                        <div class="honey__card-plat">
+                            <span class="honey__card-img"><img src={% static "img/Ellipse 30.png"%} alt=""></span>
+                            <p class="honey__card-txt">Количество: </p>
+                        </div>
+                        <div class="honey__card-plat">
+                            <span class="honey__card-img"><img src={% static "img/Ellipse 30.png"%} alt=""></span>
+                            <p class="honey__card-txt">Энергия: </p>
+                        </div>
+                        <div class="honey__card-plat">
+                            <span class="honey__card-img"><img src={% static "img/Ellipse 30.png"%} alt=""></span>
+                            <p class="honey__card-txt">Белки: </p>
+                        </div>
+                        <div class="honey__card-plat">
+                            <span class="honey__card-img"><img src={% static "img/Ellipse 30.png"%} alt=""></span>
+                            <p class="honey__card-txt">Масла: </p>
+                        </div>
+                        <div class="wrapper">
+                            <div class="link_wrapper wr3">
+                              <a class="link_wrapper-a" href="#">Заказать</a>
+                              <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+                                  <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="honey__bottom">
+                    <p class="honey__bottom-title">Новвот - блестящий, твердый, бесцветный продукт из сахарного сиропа.
+                        или желтоватый десерт. Он состоит из крупных кристаллов сахара. Ближний и Средний Восток
+                        распространены в странах. Он содержит 99,75% сахарозы (сахара). Влажность от 1%
+                        не превышает
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <section class="line">
+            <img src={% static "img/Group 38.png" %} alt="" class="line__img">
+            <img src={% static "img/Asset 4 2.png"%} alt="" class="line__image">
+        </section>
+        <section class="product" id="product">
+            <div class="container product__container">
+                <div class="product__top">
+                {% for product in products %}
+                <div class="product__card">
+                    <img src="{{ product.image.url }}" alt="" class="product__card-img">
+                    <h1 class="product__card-title">{{ product.title }}</h1>
+                    <p class="product__card-txt">{{ product.description }}</p>
+                </div>
+                {% endfor %}
+              </div>
+              </div>
+            </div>
+        </section>
+        <section class="info">
+            <div class="container">
+                <div class="info__card">
+                    <img src={% static "img/Asset 1 1.png"%} alt="" class="info__card-img">
+                    <p class="info__card-txt"> TABARRUK - компания, производящая полезные сладости под торговой маркой «Полезные сладости».</p>
+
+                </div>
+            </div>
+        </section>
+        <section class="map" id="map">
+            <div class="container map__container" >
+                <div class="map__adress">
+                    <div class="map__call">
+                        <img src={% static "img/Group 46.png"%} alt="" class="map__call-icon">
+                        <h2 class="map__call-title">ТЕЛЕФОН ДЛЯ СПРАВОК</h2>
+                    </div>
+                    <li class="map__call-item">
+                        <a href="#!" class="map__call-link">+998 90-007-09-10 </a>
+                    </li>
+                    <div class="map__location">
+                        <img src={% static "img/icons.png"%} alt="" class="map__location-icon">
+                        <h2 class="map__location-title">Наш адрес </h2>
+                    </div>
+                    <p class="map__location-txt"> ЧИЛОНЗОРСКАЯ, 89, ТАШКЕНТ, УЗБЕКИСТАН 100049</p>
+                </div>
+                <div class="map__map">
+                    <iframe  class="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.4191977670184!2d69.21450201542237!3d41.27798027927438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8a406290b6a1%3A0x1950629b4e82834!2zODkgQ2hpbG9uem9yIGtvJ2NoYXNpLCDQotC-0YjQutC10L3Rgg!5e0!3m2!1sru!2s!4v1636653483299!5m2!1sru!2s"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+        <div  class="form">
+            <div class="form__box">
+                <a href="#!" class="form__logo"><img src={% static "img/Asset 1 1.png"%} alt=""></a>
+
+                <form id="contact" action=""  method="POST">
+                    {% csrf_token %}
+                    <input type="text" name="name" id="" class="form__inp" placeholder="Имя" required>
+                    <input type="text" name="surname" id="" class="form__inp" placeholder="Фамилия" required>
+                    <input type="text" name="middlename" id="" class="form__inp" placeholder="Отчество" required>
+                    <input type="text" name="phone" id="" class="form__inp" placeholder="Номер телефона" required>
+
+                    <button type="submit" class="form__btn">Отправить</button>
+                </form>
+                <span class="form__close">X</span>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__card">
+                <p class="footer__card-txt">Компания, с 2020-го года; «ТАБАРРУК - полезные сладости» </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src={% static "main.js"%}></script>
+</body>
+{% endblock content %}
+</html>
